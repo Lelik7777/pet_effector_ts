@@ -9,13 +9,13 @@ const instance = axios.create({
 });
 
 export const apiForLogin = {
-    postRequest: (data: DataTypa) => instance.post<DataTypa, AxiosResponse<ResponseMyType>>('/auth/login', data),
+    postRequest: (data: DataType) => instance.post<DataType, AxiosResponse<ResponseMyType>>('/auth/login', data),
 }
 export const apiForOmdb = {
     getFilms: (title:{title:string}) =>
         axios.get<ResponseOmdbDataType>(`http://www.omdbapi.com/?s=${title}&apikey=e786857c`),
 }
-export type DataTypa = {
+export type DataType = {
     email: string;
     password: string;
 }
