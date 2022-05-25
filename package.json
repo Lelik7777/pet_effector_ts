@@ -2,7 +2,7 @@
   "name": "pet_effector_ts",
   "homepage": "https://Lelik7777.github.io/pet_effector_ts",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
