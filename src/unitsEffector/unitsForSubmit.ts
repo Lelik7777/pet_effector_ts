@@ -2,6 +2,7 @@ import {createEffect, createEvent, createStore} from 'effector';
 import {apiForLogin, DataType, ResponseMyType} from '../services/api';
 import {MouseEvent} from 'react';
 
+
 export const loginFx = createEffect(async ({email, password}: DataType) => {
     const res = await apiForLogin.postRequest({email, password});
     return res.data;
