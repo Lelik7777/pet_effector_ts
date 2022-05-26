@@ -8,8 +8,15 @@ export const sendReqFx = createEffect(async ({title}:{title:string}) => {
 });
 export const clearStore = createEvent<MouseEvent<HTMLButtonElement>>();
 export const onChange = createEvent<string>();
-export const $store = createStore<SearchFilmsType[]>([])
+const initialState={
+    Poster: '0',
+    Title: '0',
+    Type: '0',
+    Year: '0',
+    imdbID:'0',
+}
+export const $store = createStore<SearchFilmsType[]>([initialState])
     .on(sendReqFx.doneData, (state, data) => data)
     .reset(clearStore);
-export const $input = createStore<string>('')
+export const $input = createStore<string>('war')
     .on(onChange, (state, str) => str).reset(clearStore);

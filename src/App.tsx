@@ -4,7 +4,7 @@ import {MyInput} from './componentsForCounter/MyInput';
 import {Submit} from './componentsForForm/Submit';
 import {useStore} from 'effector-react';
 import {Effect} from './componentsForForm/Effect';
-import {buttonApp} from './unitsEffector/unitsForApp';
+import {buttonApp} from './unitsEffector/app';
 
 
 function App() {
