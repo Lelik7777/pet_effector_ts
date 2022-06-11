@@ -18,6 +18,6 @@ export const Effect = () => {
             array length{data.length}
             {loading && <Preloader/>}
         </div>
-        <div>{data.map(x => <div style={{marginBottom: '10px', width: '40%'}}>{JSON.stringify(x)}</div>)}</div>
+        <div>{data.map((x,i) => <div  key={i} style={{marginBottom: '10px', width: '40%'}}>{JSON.stringify(x)}</div>)}</div>
     </div>)
 }

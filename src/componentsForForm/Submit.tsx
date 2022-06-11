@@ -8,11 +8,11 @@ export const Submit = () => {
     const data = useStore($data);
     const loading = useStore(loginFx.pending);
     return (<div>
-        <input type="text" value={email}/>
+        <input type="text" value={email} readOnly/>
         <br/>
-        <input type="text" value={password}/>
+        <input type="text" value={password} readOnly/>
         <br/>
-        <input type='submit' onClick={() => loginFx({email, password})}/>
+        <button onClick={() => loginFx({email, password})}>Submit</button>
         <button onClick={reset}>reset</button>
         {loading && <Preloader/>}
         <div style={{color: 'red'}}>Login:<span
