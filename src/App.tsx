@@ -21,7 +21,7 @@ function App() {
                         ? <div className="block">
                             <MyInput/>
                             {/*<Counter state={state}/>*/}
-                            {/*<Counter2/>*/}
+                            <Counter2/>
                         </div>
                         :
                         <div className="block">
