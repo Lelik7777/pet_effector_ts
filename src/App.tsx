@@ -20,7 +20,7 @@ function App() {
                     isTrue
                         ? <div className="block">
                             <MyInput/>
-                            <Counter state={state}/>
+                            {/*<Counter state={state}/>*/}
                             <Counter2/>
                         </div>
                         :
