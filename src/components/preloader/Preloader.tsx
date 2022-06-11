@@ -1,6 +1,6 @@
 import React from 'react';
 //@ts-ignore
-import img2 from './img/1_CsJ05WEGfunYMLGfsT2sXA.gif'
+import img2 from '../../assets/1_CsJ05WEGfunYMLGfsT2sXA.gif'
 
 export const Preloader = () => {
     const style={

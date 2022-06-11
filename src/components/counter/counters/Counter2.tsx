@@ -1,6 +1,5 @@
 import {createComponent} from 'effector-react';
-import {$counter2, increment2} from '../../unitsEffector/counter';
-//@ts-ignore
+import {$counter2, increment2} from '../../../store/counter';
 import s from './Counter.module.css';
 
 export const Counter2 = createComponent($counter2, (props, state) => (

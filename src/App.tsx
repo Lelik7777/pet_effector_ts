@@ -1,12 +1,13 @@
 import './App.css';
-import {Counter} from './componentsForCounter/counter/Counter';
-import {MyInput} from './componentsForCounter/MyInput';
-import {Submit} from './componentsForForm/Submit';
+import {Counter} from './components/counter/counters/Counter';
+import {CustomInput} from './components/counter/CustomInput';
+import {Login} from './components/form/Login';
 import {useStore} from 'effector-react';
-import {Effect} from './componentsForForm/Effect';
-import {buttonApp} from './unitsEffector/app';
-import {Counter2} from './componentsForCounter/counter/Counter2';
-import {$counter} from './unitsEffector/counter';
+import {SearchFilms} from './components/form/SearchFilms';
+import {buttonApp} from './store/app';
+import {Counter2} from './components/counter/counters/Counter2';
+import {$counter} from './store/counter';
+
 
 
 function App() {
@@ -15,18 +16,18 @@ function App() {
     return (
         <div className="App">
             <div className="container">
-                <button onClick={buttonApp.switchButton}>{isTrue ? 'to form' : 'to counter'}</button>
+                <button onClick={buttonApp.switchButton}>{isTrue ? 'to form' : 'to counters'}</button>
                 {
                     isTrue
                         ? <div className="block">
-                            <MyInput/>
+                            <CustomInput/>
                             <Counter state={state}/>
                             <Counter2/>
                         </div>
                         :
                         <div className="block">
-                            <Submit/>
-                            <Effect/>
+                            <Login/>
+                            <SearchFilms/>
                         </div>
                 }
             </div>

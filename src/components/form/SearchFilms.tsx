@@ -1,11 +1,11 @@
 import {useStore} from 'effector-react';
-import {Preloader} from './Preloader';
-import {$input, $store, clearStore, onChange, sendReqFx} from '../unitsEffector/effect';
+import {Preloader} from '../preloader/Preloader';
+import {$input, $store, clearStore, onChange, sendReqFx} from '../../store/searchFilms';
 import {ChangeEvent} from 'react';
 
 //search film by name
 
-export const Effect = () => {
+export const SearchFilms = () => {
     const value = useStore($input);
     const data = useStore($store);
     const loading = useStore(sendReqFx.pending);

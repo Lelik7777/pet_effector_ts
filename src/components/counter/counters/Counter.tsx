@@ -1,6 +1,6 @@
-//@ts-ignore
+
 import s from './Counter.module.css';
-import {increment, reset} from '../../unitsEffector/counter';
+import {increment, reset} from '../../../store/counter';
 
 type Props={
     state:number

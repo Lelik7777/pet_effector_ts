@@ -1,9 +1,9 @@
 import {useStore} from 'effector-react';
-import {$input, $input2, onChange, onChange2, resetInput, setCounter} from '../unitsEffector/myInput';
+import {$input, $input2, onChange, onChange2, resetInput, setCounter} from '../../store/customInput';
 import {ChangeEvent} from 'react';
 
 
-export const MyInput = () => {
+export const CustomInput = () => {
     const state = useStore($input);
     const state2 = useStore($input2)
     let onClick = () => {
