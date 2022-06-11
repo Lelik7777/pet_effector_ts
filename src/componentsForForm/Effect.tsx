@@ -1,6 +1,6 @@
 import {useStore} from 'effector-react';
 import {Preloader} from './Preloader';
-import {$input, $store, clearStore, onChange, sendReqFx} from '../unitsEffector/unitsForEffect';
+import {$input, $store, clearStore, onChange, sendReqFx} from '../unitsEffector/effect';
 import {ChangeEvent} from 'react';
 
 //search film by name
@@ -18,7 +18,6 @@ export const Effect = () => {
             array length{data.length}
             {loading && <Preloader/>}
         </div>
-
-        {/*<div>{data.map(x => <div style={{marginBottom: '10px', width: '40%'}}>{JSON.stringify(x)}</div>)}</div>*/}
+        <div>{data.map(x => <div style={{marginBottom: '10px', width: '40%'}}>{JSON.stringify(x)}</div>)}</div>
     </div>)
 }

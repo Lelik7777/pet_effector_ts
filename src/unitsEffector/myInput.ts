@@ -1,5 +1,5 @@
 import {createEvent, createStore, sample} from 'effector';
-import {$counter, $counter2} from './unitsForCounter';
+import {$counter, $counter2} from './counter';
 
 export const setCounter = createEvent();
 export const resetInput = createEvent();

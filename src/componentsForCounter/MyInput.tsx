@@ -1,5 +1,5 @@
 import {useStore} from 'effector-react';
-import {$input, $input2, onChange, onChange2, resetInput, setCounter} from '../unitsEffector/unitsForMyInput';
+import {$input, $input2, onChange, onChange2, resetInput, setCounter} from '../unitsEffector/myInput';
 import {ChangeEvent} from 'react';
 
 

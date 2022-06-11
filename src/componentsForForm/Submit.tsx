@@ -1,6 +1,6 @@
 import {useStore} from "effector-react";
 import {Preloader} from "./Preloader";
-import {$data, $inputEmail, $inputPassword, loginFx, reset} from "../unitsEffector/unitsForSubmit";
+import {$data, $inputEmail, $inputPassword, loginFx, reset} from "../unitsEffector/submit";
 // login to
 export const Submit = () => {
     const email = useStore($inputEmail);
