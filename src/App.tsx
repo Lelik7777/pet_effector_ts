@@ -19,7 +19,7 @@ function App() {
                 {
                     isTrue
                         ? <div className="block">
-                            {/*<MyInput/>*/}
+                            <MyInput/>
                             {/*<Counter state={state}/>*/}
                             {/*<Counter2/>*/}
                         </div>
