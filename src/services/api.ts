@@ -13,7 +13,7 @@ export const apiForLogin = {
 }
 export const apiForOmdb = {
     getFilms: (title:{title:string}) =>
-        axios.get<ResponseOmdbDataType>(`http://www.omdbapi.com/?s=${title}&apikey=e786857c`),
+        axios.get<ResponseOmdbDataType>(`https://www.omdbapi.com/?s=${title}&apikey=e786857c`),
 }
 export type DataType = {
     email: string;
