@@ -5,7 +5,7 @@ export const increment = createEvent<MouseEvent<HTMLButtonElement>>();
 export const increment2 = createEvent<MouseEvent<HTMLButtonElement>>();
 export const reset = createEvent<MouseEvent<HTMLButtonElement>>();
 const valueFromLocalStorage = localStorage.getItem('counter');
-let value;
+let value=null;
 if (valueFromLocalStorage) {
     value = JSON.parse(valueFromLocalStorage);
 }
