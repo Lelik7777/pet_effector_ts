@@ -1,11 +1,10 @@
-
-import s from './Counter.module.css';
+import s from './Counter.module.scss';
 import {increment, reset} from '../../../store/counter';
 
-type Props={
-    state:number
+type Props = {
+    state: number
 }
-export const Counter = ({state}:Props) => {
+export const Counter = ({state}: Props) => {
 
     return (<div className={s.counter}>
         Counter: <span>{state}</span>

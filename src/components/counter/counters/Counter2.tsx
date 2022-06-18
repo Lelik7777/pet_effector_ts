@@ -1,6 +1,6 @@
 import {createComponent} from 'effector-react';
 import {$counter2, increment2} from '../../../store/counter';
-import s from './Counter.module.css';
+import s from './Counter.module.scss';
 
 export const Counter2 = createComponent($counter2, (props, state) => (
     <div className={s.counter}>

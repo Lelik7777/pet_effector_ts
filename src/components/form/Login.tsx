@@ -1,7 +1,7 @@
-import {useStore} from "effector-react";
-import {Preloader} from "../preloader/Preloader";
-import {$data, $inputEmail, $inputPassword, loginFx, reset} from "../../store/login";
-// login to
+import {useStore} from 'effector-react';
+import {Preloader} from '../preloader/Preloader';
+import {$data, $inputEmail, $inputPassword, loginFx, reset} from '../../store/login';
+import s from './Login.module.scss';
 export const Login = () => {
     const email = useStore($inputEmail);
     const password = useStore($inputPassword);
@@ -15,7 +15,10 @@ export const Login = () => {
         <button onClick={() => loginFx({email, password})}>Submit</button>
         <button onClick={reset}>reset</button>
         {loading && <Preloader/>}
-        <div style={{color: 'red'}}>Login:<span
-            style={{color: 'blue', fontWeight: 'bolder'}}>{data.resultCode === 0 ? 'true' : 'false'}</span></div>
+        <div className={s.values}>
+            <div><span>Login: </span><span className={s.span}>{data.resultCode === 0 ? 'true' : 'false'}</span></div>
+            <div><span>Email:</span> lelik21212121@gmail.com</div>
+            <div><span>Password: </span>enter_free</div>
+        </div>
     </div>)
 }
