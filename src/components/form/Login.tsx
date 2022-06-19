@@ -21,7 +21,7 @@ export const Login = () => {
     });
     const {controller, handleSubmit} = useForm({form});
     return (<div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{display:'inline'}}>
             <Input controller={controller({name: form.getName('email')})} label="email"/>
             <Input controller={controller({name: form.getName('password')})} label="password"/>
             <button type="submit">submit</button>
