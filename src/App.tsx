@@ -7,7 +7,6 @@ import {SearchFilms} from './components/form/SearchFilms';
 import {buttonApp} from './store/app';
 import {Counter2} from './components/counter/counters/Counter2';
 import {$counter} from './store/counter';
-import {Form} from './components/form/Form';
 
 
 function App() {
@@ -28,8 +27,6 @@ function App() {
                         <div className={s.block}>
                             <Login/>
                             <SearchFilms/>
-                            <Form/>
-
                         </div>
                 }
             </div>
