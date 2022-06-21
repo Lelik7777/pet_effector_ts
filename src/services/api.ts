@@ -12,7 +12,7 @@ export const apiForLogin = {
     postRequest: (data: DataType) => instance.post<DataType, AxiosResponse<ResponseMyType>>('/auth/login', data),
 }
 export const apiForOmdb = {
-    getFilms: (title:{title:string}) =>
+    getFilms: (title:string) =>
         axios.get<ResponseOmdbDataType>(`https://www.omdbapi.com/?s=${title}&apikey=e786857c`),
 }
 export type DataType = {

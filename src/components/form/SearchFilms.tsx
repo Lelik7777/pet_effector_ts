@@ -12,7 +12,7 @@ import {ChangeEvent} from 'react';
     let onChangeInput = (e: ChangeEvent<HTMLInputElement>) => onChange(e.target.value);
     return (<div style={{marginTop: '20px'}}>
         <input type="text" placeholder="search film" value={value} onChange={onChangeInput}/>
-        <button onClick={() => sendReqFx({title: value})}>find</button>
+        <button onClick={() => sendReqFx(value)}>find</button>
         <button onClick={clearStore}>reset</button>
         <div>
             array length{data.length}
