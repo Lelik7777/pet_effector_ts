@@ -5,7 +5,7 @@ type PropsType = {
     controller: Controller;
     label: React.ReactNode;
 }
-export const Input: React.FC<PropsType> = ({controller, label}) => {
+ const Input: React.FC<PropsType> = ({controller, label}) => {
     const {input} = controller();
     return (<div>
         <label>{label}</label>
@@ -13,3 +13,4 @@ export const Input: React.FC<PropsType> = ({controller, label}) => {
 
     </div>)
 }
+export default Input;

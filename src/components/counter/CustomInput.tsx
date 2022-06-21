@@ -3,7 +3,7 @@ import {$input, $input2, onChange, onChange2, resetInput, setCounter} from '../.
 import {ChangeEvent} from 'react';
 
 
-export const CustomInput = () => {
+ const CustomInput = () => {
     const state = useStore($input);
     const state2 = useStore($input2)
     let onClick = () => {
@@ -23,3 +23,4 @@ export const CustomInput = () => {
         </div>
     )
 }
+export default CustomInput;

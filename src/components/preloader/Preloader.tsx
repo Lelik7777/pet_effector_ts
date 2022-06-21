@@ -2,7 +2,7 @@ import React from 'react';
 //@ts-ignore
 import img2 from '../../assets/1_CsJ05WEGfunYMLGfsT2sXA.gif'
 
-export const Preloader = () => {
+ const Preloader = () => {
     const style={
         height:'15px',
         width:'70px',
@@ -11,3 +11,4 @@ export const Preloader = () => {
     <img src={img2} alt="preloader" style={style}/>
   </span>
 }
+export default Preloader;

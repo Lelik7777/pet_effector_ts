@@ -4,7 +4,7 @@ import {increment, reset} from '../../../store/counter';
 type Props = {
     state: number
 }
-export const Counter = ({state}: Props) => {
+ const Counter = ({state}: Props) => {
 
     return (<div className={s.counter}>
         Counter: <span>{state}</span>
@@ -12,4 +12,4 @@ export const Counter = ({state}: Props) => {
         <button onClick={reset}>reset</button>
     </div>)
 }
-
+export default Counter;

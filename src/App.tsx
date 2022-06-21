@@ -1,11 +1,11 @@
-import s from './App.module.scss';
-import {Counter} from './components/counter/counters/Counter';
-import {CustomInput} from './components/counter/CustomInput';
-import {Login} from './components/form/Login';
+import s from "./App.module.scss";
+import Counter from "./components/counter/counters/Counter";
+import CustomInput from "./components/counter/CustomInput";
+import Login from './components/form/Login';
 import {useStore} from 'effector-react';
-import {SearchFilms} from './components/form/SearchFilms';
+import SearchFilms from './components/form/SearchFilms';
 import {buttonApp} from './store/app';
-import {Counter2} from './components/counter/counters/Counter2';
+import Counter2 from './components/counter/counters/Counter2';
 import {$counter} from './store/counter';
 
 

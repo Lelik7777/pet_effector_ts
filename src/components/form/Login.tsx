@@ -1,12 +1,12 @@
 import s from './Login.module.scss';
 import {createForm, useForm} from 'effector-react-form';
 import {$data, $inputEmail, $inputPassword, loginFx, reset} from '../../store/login';
-import {Input} from './Input';
+import Input from './Input';
 import {DataType} from '../../services/api';
 import {useStore} from 'effector-react';
 
 
-export const Login = () => {
+ const Login = () => {
 
     const email = useStore($inputEmail);
     const password = useStore($inputPassword);
@@ -34,3 +34,4 @@ export const Login = () => {
         </div>
     </div>)
 }
+export default Login;

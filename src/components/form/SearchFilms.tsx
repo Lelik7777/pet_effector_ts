@@ -1,11 +1,11 @@
 import {useStore} from 'effector-react';
-import {Preloader} from '../preloader/Preloader';
+import Preloader from '../preloader/Preloader';
 import {$input, $store, clearStore, onChange, sendReqFx} from '../../store/searchFilms';
 import {ChangeEvent} from 'react';
 
 //search film by name
 
-export const SearchFilms = () => {
+ const SearchFilms = () => {
     const value = useStore($input);
     const data = useStore($store);
     const loading = useStore(sendReqFx.pending);
@@ -21,3 +21,4 @@ export const SearchFilms = () => {
         <div>{data.map((x,i) => <div  key={i} style={{marginBottom: '10px', width: '40%'}}>{JSON.stringify(x)}</div>)}</div>
     </div>)
 }
+export default SearchFilms;
