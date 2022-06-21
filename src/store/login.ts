@@ -17,5 +17,6 @@ export const reset = createEvent<MouseEvent<HTMLButtonElement>>();
 export const $data = createStore<ResponseMyType>(data)
     .on(loginFx.doneData, (state, data) => data)
     .reset(reset);
-export const $inputEmail = createStore<string>('lelik21212121@gmail.com')
+const onChange=createEvent<string>();
+export const $inputEmail = createStore<string>('lelik21212121@gmail.com').on(onChange,(state,str)=>str)
 export const $inputPassword = createStore<string>('enter_free');
